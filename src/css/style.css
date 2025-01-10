@@ -90,6 +90,64 @@ body {
   color: #555;
 }
 
+/* Conteneur principal des tags */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0;
+  justify-content: center;
+}
+
+/* Conteneur individuel pour chaque tag */
+.tag-container {
+  display: inline-block;
+}
+
+/* Style général du tag */
+.tag {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 12px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 15px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Effet hover pour le tag */
+.tag:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Texte du tag */
+.tag-text {
+  line-height: 1;
+}
+
+/* Adaptation responsive */
+@media (max-width: 600px) {
+  .tag {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+}
+
+.tilkal {
+  background-color: #fdccd1;
+  color: #f95d6f;
+  border: 1px solid #f95d6f;
+}
+
+.wAcademy {
+  background-color: #e96565;
+  color: #cd1316;
+  border: 1px solid #cd1316;
+}
+
 .gmail {
   background: #ea4335;
 }
@@ -107,11 +165,10 @@ body {
 }
 
 .about-me {
-  margin-top: 1.5rem;
   text-align: left;
   font-size: 0.95rem;
-  padding: 20px;
-  margin-top: 20px;
+  padding: 8px 20px 8px 20px;
+  margin-top: 10px;
   border-radius: 10px;
   background: #eeeff0;
   line-height: 1.5;
@@ -119,10 +176,9 @@ body {
 }
 
 .about-me h2 {
-  margin-bottom: 10px;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: #333;
-  margin-bottom: 0.5rem;
+  margin: 10px 0 1.2rem 0;
   text-align: center;
 }
 
